@@ -11,15 +11,31 @@ header, footer {
     top: 0;
     z-index: 100;
 }
-.navbar a {
+.navbar .nav-link {
     text-decoration: none;
     color: #000;
     transition: all 0.3s ease;
 }
-.navbar a:hover {
+
+.navbar .navbar-brand {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease;
+}
+.navbar .nav-link:hover {
     transform: translateY(-2px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-.navbar .active {
+/* .navbar .active {
     text-decoration: underline;
+} */
+
+       /* Add fade-in animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+    /* Apply animation to sections */
+section {
+    animation: fadeIn 1s ease-in-out;
 }
