@@ -26,9 +26,9 @@ header, footer {
     transform: translateY(-2px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-/* .navbar .active {
+.navbar .active {
     text-decoration: underline;
-} */
+}
 
        /* Add fade-in animation */
 @keyframes fadeIn {
@@ -38,4 +38,19 @@ header, footer {
     /* Apply animation to sections */
 section {
     animation: fadeIn 1s ease-in-out;
+}
+
+.parallax-section{
+    
+    background-image: url('../images/profile.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.bg-colorizer{
+    background-color:#78bafc;
 }
