@@ -13,19 +13,22 @@
     <!-- Primary Navigation -->
     <nav class="navbar navbar-expand-sm bg-body-tertiary bg-primary" data-bs-theme="dark">
         <div class="container-fluid"> 
-            <a class="navbar-brand mb-0 h1" href="#">
+            <a class="navbar-brand mb-0 h1">
                 <img src="images/Grayson's_Logo.jpg" alt="Grayson's Logo" class="img-fluid rounded-circle d-inline-block align-text-center align-top" style="width: 50px;">
             </a>
-            <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>   
+                    <li class="nav-item">
+                        <a class="nav-link" href="about/about.html">About</a>
                     </li>                  
                     <li class="nav-item">                       
-                        <a class="nav-link" href="#work">Work</a>
+                        <a class="nav-link" href="Work/work.html">Work</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#blog">Blog</a>
@@ -39,30 +42,25 @@
     </nav>
 
     <!-- Home Section -->
-    <section id="home" class="bg-colorizer">
+    <div class="parallax-wrapper">
+        <div id="home" class="parallax-sectio"></div> <!-- Background only -->
+        <div class="text-overlay">
+            <h1>Hi! I'm Grayson Wills</h1>
+            <p>I'm a passionate software developer dedicated to crafting elegant and efficient solutions that make a meaningful impact. With a genuine love for coding and problem-solving, I thrive on turning ideas into powerful and scalable applications that drive positive change.</p>
+        </div> <!-- Text overlay outside -->
+      </div>
 
-        <div class="row">
-            <div class="col-md-6">
-                <img src="images/profile.jpg" alt="Grayson Wills" class="img-fluid">
-            </div>
-
-            <div class="col-md-6 d-flex flex-column justify-content-center align-items-left">
-                <div class="">
-                    <div class="">
-                        <h2>Hi! I'm Grayson Wills</h2>
-                    </div>
-                    <div class="">
-                        <p>I'm a passionate software developer dedicated to crafting elegant and efficient solutions that make a meaningful impact. With a genuine love for coding and problem-solving, I thrive on turning ideas into powerful and scalable applications that drive positive change.</p>
-                    </div>
-                </div>    
-            </div>
-        </div>
-    </section>
 
     <!-- About Section -->
     <div>
-          <section id="about" class="container mt-3 text-center">
-            <h2>Crafting Unique Solutions and Meaningful Impacts Through Code</h2>
+          <section id="about" class="container mt-3">
+            <div class="text-center">
+                <h2>Crafting Unique Solutions and Meaningful Impacts Through Code</h2>
+            </div>
+            
+            <p class="description">
+                I'm Grayson Wills, a software developer with a fervent passion for crafting unique solutions and creating meaningful impacts through code. My expertise spans a diverse array of areas including Unity, app development, web development, and automation. I relish the challenge of transforming complex problems into intuitive and efficient software applications. Whether developing immersive games, building scalable websites, or integrating smart devices, my goal is to enhance the digital experience. As a freelancer, I thrive on collaborating with clients to meet and exceed their expectations. I'm eager to connect with others looking to harness the power of technology to achieve their software goals. Let's explore how we can work together to bring your ideas to life!
+            </p>
         </section>
     </div>
   
@@ -72,8 +70,6 @@
         <div>
             <section id="blog" class="bg-image parallax-section">
             <div class="container">
-                <h2>Blog</h2>
-                <p>This is a parallax section with a background image that moves as you scroll.</p>
                 <div class="wrapper">
                     <a href="work.html" class="blog-button"><span>What Can I Do?</span></a>
                 </div>
@@ -83,27 +79,27 @@
 
     <!-- Projects Section -->
    
-    <div>
-    <section id="projects" class="">
-        <div class="d-flex flex-wrap">
-            <div class="promo col-md-4" style="--overlay-color: hotpink">
-                <div class="image-wrapper img-fluid "><img src="images/unityLogo.png"/></div>
-                <h2 class="title" data-cta="My Games! →">Unity</h2>
-            </div>
+    <div style="background-color: black;">
+        <section id="projects" class="container">
+            <div class="d-flex flex-wrap row">
+                <div class="promo col-4" style="--overlay-color: hotpink">
+                    <div class="image-wrapper img-fluid "><img src="images/unityLogo.png"/></div>
+                    <h2 class="title" data-cta="My Games! →">Unity</h2>
+                </div>
 
-            <div class="promo col-md-4" style="--overlay-color: hotpink">
-                <div class="image-wrapper img-fluid "><img src="images/fullStackLogo.png"/></div>
-                <h2 class="title" data-cta="My Websites! →">Web Dev</h2>
-            </div>
+                <div class="promo col-4" style="--overlay-color: hotpink">
+                    <div class="image-wrapper img-fluid "><img src="images/fullStackLogo.png"/></div>
+                    <h2 class="title" data-cta="My Websites! →">Web Dev</h2>
+                </div>
 
-            <div class="promo col-md-4" style="--overlay-color: hotpink">
-                <div class="image-wrapper img-fluid "><img src="images/appDevLogo.png"/></div>
-                <h2 class="title">App Dev</h2>
+                <div class="promo col-4" style="--overlay-color: hotpink">
+                    <div class="image-wrapper img-fluid "><img src="images/appDevLogo.png"/></div>
+                    <h2 class="title">App Dev</h2>
+                </div>
             </div>
-            </div>
-        </div>
+            
 
-    </section>
+        </section>
     </div>
 
     
@@ -111,8 +107,6 @@
        <div>
         <section id="work" class="bg-image parallax-section">
             <div class="container">
-                <h2>Blog</h2>
-                <p>This is a parallax section with a background image that moves as you scroll.</p>
                 <div class="wrapper">
                     <a href="#" class="blog-button"><span>Explore My Blog!</span></a>
                 </div>
@@ -153,7 +147,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
-
+    <script src="javascript/script.js"></script>
 </body>
 </html>
