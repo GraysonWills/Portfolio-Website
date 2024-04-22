@@ -10,42 +10,41 @@
 </head>
 <body>
 
-    <!-- Primary Navigation -->
-    <header>
-        <nav class="navbar navbar-expand-sm bg-body-tertiary navbar-dark bg-primary" data-theme="dark">
-            <div class="container-fluid"> 
-                <a class="navbar-brand mb-0 h1">
-                    <img src="images/Grayson's_Logo.jpg" alt="Grayson's Logo" class="img-fluid rounded-circle d-inline-block align-text-center align-top" style="width: 50px;">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item" >
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>   
-                        <li class="nav-item">
-                            <a class="nav-link" href="about/about.html">About</a>
-                        </li>                  
-                        <li class="nav-item">                       
-                            <a class="nav-link" href="Work/work.html">Work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Blog/blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Projects/projects.html">Projects</a>
-                        </li>
-                    </ul>
-                </div>
+    <!-- Primary Navigation --> 
+    <nav class="navbar navbar-expand-sm bg-body-tertiary navbar-dark bg-primary" data-theme="dark">
+        <div class="container-fluid"> 
+            <a class="navbar-brand mb-0 h1">
+                <img src="images/Grayson's_Logo.jpg" alt="Grayson's Logo" class="img-fluid rounded-circle d-inline-block align-text-center align-top" style="width: 50px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item" >
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>   
+                    <li class="nav-item">
+                        <a class="nav-link" href="about/about.html">About</a>
+                    </li>                  
+                    <li class="nav-item">                       
+                        <a class="nav-link" href="Work/work.html">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Blog/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Projects/projects.html">Projects</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+
 
     <!-- Home Section -->
     <div class="parallax-wrapper">
-        <div id="home"></div> <!-- Background only -->
+        <div id="home" class="parallax-background"></div> <!-- Background only -->
         <div class="text-overlay section fade-in-section fade-in-left">
             <h1>Hi! I'm Grayson Wills</h1>
             <p>I'm a passionate software developer dedicated to crafting elegant and efficient solutions that make a meaningful impact. With a genuine love for coding and problem-solving, I thrive on turning ideas into powerful and scalable applications that drive positive change.</p>
@@ -66,16 +65,16 @@
         </section>
     </div>
 
-    <!-- Blog Section -->
-    <div class="">
-        <section id="blog" class="bg-image parallax-section ">
-            <div class="container">
-                <div class="wrapper">
-                    <a href="Work/work.html" class="blog-button"><span>What Can I Do?</span></a>
-                </div>
+    <!-- Work Section -->
+    <div class="parallax-wrapper">
+        <div id="work" class="parallax-background"></div> <!-- Background with parallax effect -->
+        <div class="content-container d-flex align-items-center justify-content-center">
+            <div class="text-center">
+                <a href="Work/work.html" class="blog-button"><span>What Can I Do?</span></a>
             </div>
-        </section>
+        </div>
     </div>
+    
 
     <!-- Projects Section -->
     <div class="hover-area section fade-in-section fade-in-right" id="hoverArea">
@@ -90,15 +89,14 @@
     </div>
 
 
-    <!-- Work Section -->
-    <div>
-        <section id="work" class="bg-image parallax-section">
-            <div class="container">
-                <div class="wrapper">
-                    <a href="Blog/blog.html" class="blog-button"><span>Explore My Blog!</span></a>
-                </div>
+    <!-- Blog Section -->
+    <div class="parallax-wrapper">
+        <div id="blog" class="parallax-background"></div> <!-- Background with parallax effect -->
+        <div class="content-container d-flex align-items-center justify-content-center">
+            <div class="text-center">
+                <a href="Blog/blog.html" class="blog-button"><span>Explore My Blog!</span></a>
             </div>
-        </section>
+        </div>
     </div>
 
     <!-- Footer -->
