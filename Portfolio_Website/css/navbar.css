@@ -1,0 +1,26 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .navbar .nav-link {
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar .navbar-brand {
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar .nav-link:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  .navbar .active {
+    text-decoration: underline;
+  }

@@ -1,3 +1,9 @@
+body {
+    font-family: 400 15px/1.8 "Lato", sans-serif;
+    overflow: -moz-scrollbars-horizontal; 
+    overflow-x: hidden;
+  }
+
 .full-width-img {
     height: 400px; /* Fixed height */
     object-fit: cover; /* Ensures the image covers the area without distorting */
@@ -20,4 +26,43 @@
 
 .cursor-pointer {
     cursor: pointer; /* This class can be reused wherever a clickable cursor is needed */
+}
+
+.section {
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.alternate-section {
+    background-color: #f9f9f9;
+}
+
+.list-unstyled {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.list-unstyled li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.list-unstyled li:last-child {
+    border-bottom: none;
+}
+
+.list-unstyled li:hover {
+    background-color: #f5f5f5;
+    
+}
+
+.list-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 10px; /* Space between title and list */
+    text-align: center; /* Centering the title above each list */
 }
