@@ -1,0 +1,23 @@
+.full-width-img {
+    height: 400px; /* Fixed height */
+    object-fit: cover; /* Ensures the image covers the area without distorting */
+    width: 100%; /* Ensures it spans the width of the container */
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    width: 100%;
+    padding: 3px;
+    color: white;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for all hover effects */
+}
+
+.position-relative:hover .overlay-text {
+    transform: translateY(-10px); /* Moves the text up by 10px when parent is hovered */
+}
+
+.cursor-pointer {
+    cursor: pointer; /* This class can be reused wherever a clickable cursor is needed */
+}
