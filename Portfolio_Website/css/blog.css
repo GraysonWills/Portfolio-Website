@@ -4,7 +4,6 @@
     justify-content: center;
 }
 
-.row h1:before,
 .row h1:after {
     background: black;
     height: 1px;
@@ -15,9 +14,3 @@
 .row span{
     margin: 0px 10px 0px 0px;
 }
-
-@media (max-width: 768px) {
-    .paragraphSection {
-      margin-top: 1.5rem;
-    }
-  }
