@@ -24,3 +24,7 @@
   .navbar .active {
     text-decoration: underline;
   }
+  .nav-link {
+    color: black;
+    font-weight: bold;
+  }

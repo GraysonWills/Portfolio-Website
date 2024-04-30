@@ -13,8 +13,18 @@
   }
 
 .row span{
-    margin: 0px 10px 0px 0px;
+    margin: 10px 10px 10px 10px;
 }
+
+.logo {
+  
+    transition: all 0.3s ease;
+  }
+  
+.logo:hover {
+    
+    transform: translateY(-2px);
+  }
 
 @media (max-width: 768px) {
     .paragraphSection {

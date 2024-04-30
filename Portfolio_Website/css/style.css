@@ -154,6 +154,13 @@ section {
     height: 30%; /* Set a specific height for the text box */
     line-height: 1.3;
   }
+  .parallax-background {
+    background-attachment: scroll;  /* Changes background attachment to scroll */
+    background-position: top;       /* Optional: Adjust position if needed */
+}
+#blog{
+  background-position: center;
+}
 }
 
 .description {
@@ -161,10 +168,7 @@ section {
   font-size: 1em;
 }
 
-.nav-link {
-  color: black;
-  font-weight: bold;
-}
+
 
 .hover-area {
   transition: background-color 0.3s ease; /* Smooth background color transition */
@@ -205,9 +209,16 @@ section {
   transform: translateY(0); /* Reset position if moved */
 }
 
+.logo {
+  
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  
+  transform: translateY(-2px);
+}
+
 @media (max-width: 768px) {
-  .parallax-background {
-      background-attachment: scroll;  /* Changes background attachment to scroll */
-      background-position: top;       /* Optional: Adjust position if needed */
-  }
+
 }

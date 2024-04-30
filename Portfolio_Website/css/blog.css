@@ -1,3 +1,9 @@
+body {
+    font-family: 400 15px/1.8 "Lato", sans-serif;
+    overflow: -moz-scrollbars-horizontal; 
+    overflow-x: hidden;
+  }
+
 .row h1 {
     display: flex;
     align-items: center;
@@ -14,3 +20,13 @@
 .row span{
     margin: 0px 10px 0px 0px;
 }
+
+.logo {
+  
+    transition: all 0.3s ease;
+  }
+  
+.logo:hover {
+    
+    transform: translateY(-2px);
+  }
