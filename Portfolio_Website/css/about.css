@@ -1,33 +1,38 @@
+/* Styles for the h1 element inside a row */
 .row h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Styles for the pseudo-elements before and after the h1 element */
 .row h1:before,
 .row h1:after {
-    background: black;
-    height: 1px;
-    flex: 1;
-    content: '';
-  }
-
-.row span{
-    margin: 10px 10px 10px 10px;
+  background: black;
+  height: 1px;
+  flex: 1;
+  content: '';
 }
 
-.logo {
-  
-    transition: all 0.3s ease;
-  }
-  
-.logo:hover {
-    
-    transform: translateY(-2px);
-  }
+/* Styles for the span elements inside a row */
+.row span {
+  margin: 10px;
+}
 
+/* Styles for the logo class */
+.logo {
+  transition: all 0.3s ease;
+}
+
+/* Styles for the logo class on hover */
+.logo:hover {
+  transform: translateY(-2px);
+}
+
+/* Media query for screens with a maximum width of 768px */
 @media (max-width: 768px) {
-    .paragraphSection {
-      margin-top: 1.5rem;
-    }
+  /* Styles for the paragraphSection class */
+  .paragraphSection {
+    margin-top: 1.5rem;
   }
+}

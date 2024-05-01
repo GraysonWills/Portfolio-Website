@@ -1,15 +1,18 @@
+/* Set the font family and size for the body */
 body {
     font-family: 400 15px/1.8 "Lato", sans-serif;
-    overflow: -moz-scrollbars-horizontal; 
-    overflow-x: hidden;
-  }
+    overflow: -moz-scrollbars-horizontal; /* Hide horizontal scrollbar in Firefox */
+    overflow-x: hidden; /* Hide horizontal scrollbar in other browsers */
+}
 
+/* Style for full-width images */
 .full-width-img {
     height: 400px; /* Fixed height */
     object-fit: cover; /* Ensures the image covers the area without distorting */
     width: 100%; /* Ensures it spans the width of the container */
 }
 
+/* Style for overlay text */
 .overlay-text {
     position: absolute;
     bottom: 0;
@@ -20,45 +23,53 @@ body {
     transition: transform 0.3s ease-in-out; /* Smooth transition for all hover effects */
 }
 
+/* Move overlay text up when parent is hovered */
 .position-relative:hover .overlay-text {
-    transform: translateY(-10px); /* Moves the text up by 10px when parent is hovered */
+    transform: translateY(-10px);
 }
 
+/* Style for elements with clickable cursor */
 .cursor-pointer {
-    cursor: pointer; /* This class can be reused wherever a clickable cursor is needed */
+    cursor: pointer;
 }
 
+/* Style for sections */
 .section {
     border-top: 1px solid #ccc;
     margin-top: 10px;
 }
 
+/* Style for alternate sections */
 .alternate-section {
     background-color: #f9f9f9;
 }
 
+/* Style for unordered lists */
 .list-unstyled {
     border: 1px solid #ddd;
     background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 15px;
     border-radius: 5px;
 }
 
+/* Style for list items */
 .list-unstyled li {
     padding: 8px 0;
     border-bottom: 1px solid #eee;
 }
 
+/* Remove bottom border from last list item */
 .list-unstyled li:last-child {
     border-bottom: none;
 }
 
+/* Highlight list item on hover */
 .list-unstyled li:hover {
     background-color: #f5f5f5;
-    
 }
 
+/* Style for list title */
 .list-title {
     font-size: 18px;
     font-weight: bold;
@@ -66,13 +77,12 @@ body {
     text-align: center; /* Centering the title above each list */
 }
 
+/* Style for logos */
 .logo {
-  
     transition: all 0.3s ease;
-  }
-  
-.logo:hover {
-    
-    transform: translateY(-2px);
-  }
+}
 
+/* Move logo up on hover */
+.logo:hover {
+    transform: translateY(-2px);
+}

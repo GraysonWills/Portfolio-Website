@@ -1,0 +1,40 @@
+/* Set the height of the body and html elements to 100% of the viewport */
+body, html {
+    height: 100%;
+    font-family: 400 15px/1.8 "Lato", sans-serif; /* Set the font family and size */
+    overflow: -moz-scrollbars-horizontal; /* Hide horizontal scrollbars in Firefox */
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+/* Center the content horizontally */
+.content {
+    text-align: center;
+    margin-top: 20px; /* Add top margin for spacing from the top of the viewport */
+}
+
+/* Set the width of the blog image to 100% and maintain aspect ratio */
+.blog-image {
+    width: 100%;
+}
+
+/* Align text to the left and set line height */
+.text-left {
+    text-align: left;
+    line-height: 30px;
+}
+
+/* Style for h1 heading */
+h1 {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+/* Add transition effect to the logo with 0.3s duration */
+.logo {
+    transition: all 0.3s ease;
+}
+
+/* Apply transform on hover to move the logo up by 2 pixels */
+.logo:hover {
+    transform: translateY(-2px);
+}

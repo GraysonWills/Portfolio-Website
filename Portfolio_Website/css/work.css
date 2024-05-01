@@ -1,20 +1,25 @@
+/* Styles for h1 element */
 h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; /* Adds margin at the bottom */
 }
 
+/* Styles for hr element */
 hr {
-    margin-top: -0.5rem;
-    width: 50%;
+    margin-top: -0.5rem; /* Adjusts margin at the top */
+    width: 50%; /* Sets the width of the horizontal rule */
 }
 
+/* Styles for ul element */
 ul {
-    padding-left: 20px;
+    padding-left: 20px; /* Adds padding on the left side */
 }
 
+/* Styles for li elements inside ul */
 ul li {
-    padding: 0.5rem 0;
+    padding: 0.5rem 0; /* Adds padding at the top and bottom */
 }
 
+/* Styles for image outline */
 .image-outline {
     border: 5px solid black; /* Adjust color and thickness of the border */
     width: 300px; /* Slightly larger than the image */
@@ -23,42 +28,46 @@ ul li {
     top: 20px; /* Adjust so only three sides are visible */
     left: 45px; /* Same here */
     z-index: -1; /* Ensures the outline is behind the image */
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Adds smooth transition effect */
 }
 
-
+/* Styles for images inside .right-side container */
 .right-side img {
     width: 300px; /* Ensure image fits the container */
-    transition: transform 0.3s ease; /* Smooth image scaling on hover */
+    transition: transform 0.3s ease; /* Adds smooth image scaling on hover */
 }
 
+/* Styles for images inside .right-side container on hover */
 .right-side img:hover {
-    transform: translateY(-2px);
+    transform: translateY(-2px); /* Moves the image up slightly on hover */
 }
 
+/* Styles for h1 element inside .row container */
 .row h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex; /* Displays the h1 element as a flex container */
+    align-items: center; /* Centers the content vertically */
+    justify-content: center; /* Centers the content horizontally */
 }
 
+/* Styles for :after pseudo-element of h1 element inside .row container */
 .row h1:after {
-    background: black;
-    height: 1px;
-    flex: 1;
-    content: '';
-  }
-
-.row span{
-    margin: 0px 10px 0px 0px;
+    background: black; /* Sets the background color */
+    height: 1px; /* Sets the height of the line */
+    flex: 1; /* Takes up remaining space */
+    content: ''; /* Adds content to the pseudo-element */
 }
 
+/* Styles for span elements inside .row container */
+.row span {
+    margin: 0px 10px 0px 0px; /* Adds margin on the right side */
+}
+
+/* Styles for .logo class */
 .logo {
-  
-    transition: all 0.3s ease;
-  }
-  
+    transition: all 0.3s ease; /* Adds smooth transition effect for all properties */
+}
+
+/* Styles for .logo class on hover */
 .logo:hover {
-    
-    transform: translateY(-2px);
-  }
+    transform: translateY(-2px); /* Moves the logo up slightly on hover */
+}

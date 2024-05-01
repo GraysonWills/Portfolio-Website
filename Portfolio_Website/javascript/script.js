@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.getElementById('hoverArea').addEventListener('mouseover', function() {
     let dynamicLink = document.getElementById('dynamicLink');
-    dynamicLink.href = 'Projects/projects.html'; // Change URL dynamically if needed
+    dynamicLink.href = 'Projects/'; // Change URL dynamically if needed
   });
   
   document.addEventListener('DOMContentLoaded', function() {

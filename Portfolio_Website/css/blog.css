@@ -1,32 +1,57 @@
+/* Set the font family and size for the body */
 body {
-    font-family: 400 15px/1.8 "Lato", sans-serif;
-    overflow: -moz-scrollbars-horizontal; 
-    overflow-x: hidden;
-  }
-
-.row h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  font-family: 400 15px/1.8 "Lato", sans-serif;
+  overflow: -moz-scrollbars-horizontal; /* Hide horizontal scrollbars for Firefox */
+  overflow-x: hidden; /* Hide horizontal scrollbars for other browsers */
 }
 
-.row h1:after {
-    background: black;
-    height: 1px;
-    flex: 1;
-    content: '';
-  }
-
-.row span{
-    margin: 0px 10px 0px 0px;
+/* Style for read more links */
+.read-more {
+  color: #007bff; /* Bootstrap primary blue */
+  text-decoration: underline; /* Add underline */
 }
 
+/* Style for blog images */
+.blog-image {
+  width: 100%; /* Full width of the column */
+  height: auto; /* Maintain aspect ratio */
+  aspect-ratio: 1.5 / 1; /* 1.5:1 aspect ratio */
+}
+
+/* Hover effect for blog images */
+.blog-image:hover {
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3); /* Add box shadow on hover */
+}
+
+/* Style for links with no underline and inherit color */
+.no-link {
+  color: inherit; /* Keeps the text color the same as surrounding text or specified color */
+  cursor: pointer; /* Keeps the cursor as the default rather than pointer */
+  text-decoration: none; /* Removes underline */
+}
+
+/* Hover and focus styles for links with no underline */
+.no-link:hover, .no-link:focus {
+  color: inherit; /* No color change on hover or focus */
+  text-decoration: none; /* Ensures no underline appears on hover or focus */
+}
+
+/* Transition and hover effect for logo */
 .logo {
-  
-    transition: all 0.3s ease;
-  }
-  
+  transition: all 0.3s ease; /* Add transition effect */
+}
+
 .logo:hover {
-    
-    transform: translateY(-2px);
-  }
+  transform: translateY(-2px); /* Move the logo up by 2 pixels on hover */
+}
+
+/* Initial opacity and transition for blog rows */
+.blog-row {
+  opacity: 0; /* Set initial opacity to 0 */
+  transition: opacity 1s ease-out; /* Add transition effect */
+}
+
+/* Class to be added when row is in viewport */
+.blog-row.visible {
+  opacity: 1; /* Set opacity to 1 when the row is in viewport */
+}

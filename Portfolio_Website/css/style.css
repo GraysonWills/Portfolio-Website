@@ -39,7 +39,6 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   transition: filter 0.3s ease;
-  
 }
 
 .content-container {
@@ -55,19 +54,18 @@ section {
 
 /* Background Images */
 #work {
-  background-image: url('../images/Smile.jpg');
+  background-image: url('../images/home/Smile.jpg');
   filter: grayscale(100%);
 }
 
 #blog {
-  background-image: url('../images/travel_photo.jpg');
+  background-image: url('../images/home/travel_photo.jpg');
   filter: grayscale(100%);
   background-position: center calc(20% - 10vh);
 }
 
 #home{
-  background-image: url('../images/profile.jpg');
-
+  background-image: url('../images/home/profile.jpg');
 }
 
 #insta img{
@@ -137,7 +135,6 @@ section {
   flex-direction: column; /* Ensures the text flows downward */
   align-items: start; /* Aligns text to the start of the flex container */
   justify-content: center; /* Centers content vertically if needed */
-  /*font-family: Courier;*/
   transition: background 0.3s ease;
   line-height: 2;
   cursor: pointer;
@@ -157,18 +154,16 @@ section {
   .parallax-background {
     background-attachment: scroll;  /* Changes background attachment to scroll */
     background-position: top;       /* Optional: Adjust position if needed */
-}
-#blog{
-  background-position: center;
-}
+  }
+  #blog{
+    background-position: center;
+  }
 }
 
 .description {
   letter-spacing: 1.5px;
   font-size: 1em;
 }
-
-
 
 .hover-area {
   transition: background-color 0.3s ease; /* Smooth background color transition */
@@ -210,15 +205,9 @@ section {
 }
 
 .logo {
-  
   transition: all 0.3s ease;
 }
 
 .logo:hover {
-  
   transform: translateY(-2px);
-}
-
-@media (max-width: 768px) {
-
 }
