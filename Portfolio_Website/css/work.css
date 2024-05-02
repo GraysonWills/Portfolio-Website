@@ -19,29 +19,6 @@ ul li {
     padding: 0.5rem 0; /* Adds padding at the top and bottom */
 }
 
-/* Styles for image outline */
-.image-outline {
-    border: 5px solid black; /* Adjust color and thickness of the border */
-    width: 300px; /* Slightly larger than the image */
-    height: 200px;
-    position: absolute;
-    top: 20px; /* Adjust so only three sides are visible */
-    left: 45px; /* Same here */
-    z-index: -1; /* Ensures the outline is behind the image */
-    transition: transform 0.3s ease; /* Adds smooth transition effect */
-}
-
-/* Styles for images inside .right-side container */
-.right-side img {
-    width: 300px; /* Ensure image fits the container */
-    transition: transform 0.3s ease; /* Adds smooth image scaling on hover */
-}
-
-/* Styles for images inside .right-side container on hover */
-.right-side img:hover {
-    transform: translateY(-2px); /* Moves the image up slightly on hover */
-}
-
 /* Styles for h1 element inside .row container */
 .row h1 {
     display: flex; /* Displays the h1 element as a flex container */
@@ -70,4 +47,8 @@ ul li {
 /* Styles for .logo class on hover */
 .logo:hover {
     transform: translateY(-2px); /* Moves the logo up slightly on hover */
+}
+
+p{
+    line-height: 35px;
 }
