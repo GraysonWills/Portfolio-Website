@@ -73,6 +73,7 @@ body {
 .list-title {
     font-size: 18px;
     font-weight: bold;
+    color: var(--primary-color);
     margin-bottom: 10px; /* Space between title and list */
     text-align: center; /* Centering the title above each list */
 }
