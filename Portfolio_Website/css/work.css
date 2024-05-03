@@ -52,3 +52,17 @@ ul li {
 p{
     line-height: 35px;
 }
+
+.content-wrapper {
+    min-height: calc(100vh - 80px); /* Adjust 60px to your footer's height */
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.push {
+    flex-grow: 1;
+}
