@@ -69,3 +69,7 @@ main {
 .push {
   flex-grow: 1;
 }
+
+.cover-img{
+  max-height: 220px;
+}
